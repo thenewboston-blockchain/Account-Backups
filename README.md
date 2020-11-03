@@ -1,6 +1,6 @@
 ## Overview
 
-Script to manually backup accounts.
+Script to manually backup accounts while the network is still in alpha/beta.
 
 ## Project Setup
 
