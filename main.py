@@ -6,7 +6,7 @@ from thenewboston.utils.network import fetch
 from config.settings import ACCOUNT_BACKUPS_DIR
 from utils.files import write_json
 
-PRIMARY_VALIDATOR_IP = '54.183.17.224'
+PRIMARY_VALIDATOR_IP = '157.230.75.212'
 
 
 def fetch_account_data():
