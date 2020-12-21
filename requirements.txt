@@ -1,1 +1,1 @@
-thenewboston==0.0.29
+thenewboston==0.0.31
