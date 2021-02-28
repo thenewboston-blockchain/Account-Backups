@@ -1,0 +1,40 @@
+name: Account Backup
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  schedule:
+    - cron: '*/5 * * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run the script
+      run: |
+        python main.py
+    - name: Update the file
+      run: |
+        git config --global user.name 'dhakal0kushal'
+        git config --global user.email 'dhakalkushal371@gmail.com@users.noreply.github.com'
+        git add .
+        git commit -m "Automated report"
+        git push
+
