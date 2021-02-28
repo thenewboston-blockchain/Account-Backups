@@ -37,7 +37,7 @@ def run():
     """
 
     now = datetime.now()
-    date_time = now.strftime('%Y-%m-%d-%H:%M:%S')
+    date_time = now.strftime('%Y-%m-%d-%H_%M_%S')
     file_path = os.path.join(ACCOUNT_BACKUPS_DIR, f'{date_time}.json')
     data = format_results(fetch_account_data())
     verify_results(data=data)
@@ -58,7 +58,7 @@ def verify_results(*, data):
     if total == MAX_POINT_VALUE:
         print('\nValid')
     else:
-        print('\nInvalid')
+        raise Exception("Invalid!!") 
 
 
 if __name__ == '__main__':
