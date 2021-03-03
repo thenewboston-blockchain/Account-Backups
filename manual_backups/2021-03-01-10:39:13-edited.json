@@ -1311,10 +1311,6 @@
     "balance": 2000,
     "balance_lock": "ae1e084c6f9475f9604d9cf8aba68b54d5b217fefbb17d5a2f57ebfcd833eeab"
   },
-  "qwqqqweqweqwdqwqdqwdqwdqwdqwdqwdqwqwqwqwdqwdqwdqwdqwdqwdqwdqwdqw": {
-    "balance": 2,
-    "balance_lock": "qwqqqweqweqwdqwqdqwdqwdqwdqwdqwdqwqwqwqwdqwdqwdqwdqwdqwdqwdqwdqw"
-  },
   "ddef8a7ea0d98f8605703102f5b25e587d612ba7917afc1c9eb0ee904ae181c0": {
     "balance": 500,
     "balance_lock": "ddef8a7ea0d98f8605703102f5b25e587d612ba7917afc1c9eb0ee904ae181c0"
@@ -1463,18 +1459,6 @@
     "balance": 12500,
     "balance_lock": "57c10f3554872103c9b91e481347c2522dd5a13757831a51b12180c09e2e50ce"
   },
-  "~!@#$%^&*()_+`1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+`123456789": {
-    "balance": 1,
-    "balance_lock": "~!@#$%^&*()_+`1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+`123456789"
-  },
-  "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\": {
-    "balance": 1,
-    "balance_lock": "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\"
-  },
-  "data:text/html;base64,PHNjcmlwdD5hbGVydCgieHNzISIpOzwvc2NyaXB0Pg": {
-    "balance": 3,
-    "balance_lock": "data:text/html;base64,PHNjcmlwdD5hbGVydCgieHNzISIpOzwvc2NyaXB0Pg"
-  },
   "878191f1f66c58c53ae9179c3a7ea5ad7896f26f81d5201c3891f9ceb34fea72": {
     "balance": 123600,
     "balance_lock": "878191f1f66c58c53ae9179c3a7ea5ad7896f26f81d5201c3891f9ceb34fea72"
@@ -1616,7 +1600,7 @@
     "balance_lock": "bf199d73666f4b96c3d47b796fdb8c4232782584b92882305cc83bff8c938c5b"
   },
   "23676c35fce177aef2412e3ab12d22bf521ed423c6f55b8922c336500a1a27c5": {
-    "balance": 281474943609637,
+    "balance": 281474943609649,
     "balance_lock": "fce10cd59e273aac617fc6d3dc4f9c10884eb7ee51aae481b44bc1cf631fc995"
   },
   "fdcae93c70a143ed36a188389e6aa37b446d3ee244e96cae0ef758672860d8d2": {
@@ -1974,14 +1958,6 @@
   "a7ab6d3a249a5577ecc25e71ff97b7fa0a836c75a8df500f046e1c933792a152": {
     "balance": 6000,
     "balance_lock": "a7ab6d3a249a5577ecc25e71ff97b7fa0a836c75a8df500f046e1c933792a152"
-  },
-  "~!@#$%^&*()_+\\b1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+a12345678": {
-    "balance": 4,
-    "balance_lock": "~!@#$%^&*()_+\\b1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+a12345678"
-  },
-  "~!@#$%^&*()_+\\b1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+a1234567.": {
-    "balance": 1,
-    "balance_lock": "~!@#$%^&*()_+\\b1234567890-=[]\\;',./{}|:\"<>~!@#$%^&*()_+a1234567."
   },
   "559942e658707a21968c6c304274e49755f38397a8bfbac56e18a74d7d58800e": {
     "balance": 1,
