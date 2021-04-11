@@ -8,7 +8,7 @@ from config.settings import ACCOUNT_BACKUPS_DIR
 from utils.files import write_json
 from utils.format_results import format_results
 
-PRIMARY_VALIDATOR_IP = '54.241.124.162'
+PRIMARY_VALIDATOR_IP = '54.219.183.128'
 
 
 def fetch_account_data():
