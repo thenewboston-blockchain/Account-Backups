@@ -1,0 +1,38 @@
+name: Account Backup Workflow
+
+on:
+# This scheduled backup will run at 00:00 UTC. But the Github schedules are not dependable. There could be delay in actions. So adding a manual trigger
+  schedule:
+    - cron: '0 0 * * *'
+# This is manual trigger for Account backup. 
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Setup repo
+        uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v2.1.4
+        with:
+          python-version: 3.x
+      - name: Caching
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: Account Backup
+        run: |
+          pip install -r requirements.txt
+          python main.py
+      - name: Push to Github
+        run: |
+          git config --global user.name 'arjunraghurama'
+          git config --global user.email 'arjunr0019@gmail.com'
+          git add .
+          d=`date +%Y-%m-%d`
+          git commit -m "Account Backup $d"
+          git push
