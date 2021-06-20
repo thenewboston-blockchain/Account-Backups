@@ -42,10 +42,8 @@ def run():
     data = format_results(fetch_account_data())
     verify_results(data=data)
 
-    write_json(
-        file=file_path,
-        data=data
-    )
+    write_json(file=file_path, data=data)
+    write_json(file=os.path.join(ACCOUNT_BACKUPS_DIR, 'latest.json'), data=data)
 
 
 def verify_results(*, data):
