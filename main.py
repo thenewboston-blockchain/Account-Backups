@@ -42,6 +42,7 @@ def run():
     latest_backup_file_path = os.path.join(LATEST_BACKUP_DIR, 'latest.json')
 
     data = format_results(fetch_account_data())
+    data = dict(sorted(data.items()))
     verify_results(data=data)
 
     write_json(file=account_backup_file_path, data=data)
