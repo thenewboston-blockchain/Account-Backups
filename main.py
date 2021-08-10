@@ -1,14 +1,24 @@
 import os
 from datetime import datetime
 
-from thenewboston.constants.network import MAX_POINT_VALUE
-from thenewboston.utils.network import fetch
+import requests
 
 from config.settings import ACCOUNT_BACKUPS_DIR, LATEST_BACKUP_DIR
 from utils.files import write_json
 from utils.format_results import format_results
 
+MAX_POINT_VALUE = 281474976710656
 PRIMARY_VALIDATOR_IP = '54.219.183.128'
+
+
+class NetworkException(Exception):
+    pass
+
+
+def fetch(*, url, headers):
+    """Send a GET request and return response as Python object"""
+    response = requests.get(url, headers=headers)
+    return validate_response(response)
 
 
 def fetch_account_data():
@@ -47,6 +57,18 @@ def run():
 
     write_json(file=account_backup_file_path, data=data)
     write_json(file=latest_backup_file_path, data=data)
+
+
+def validate_response(response):
+    """
+    Validate status code
+    Return response as Python object
+    """
+    if response.status_code >= 400:
+        err = f'status_code:{response.status_code} - {response.text}'
+        raise NetworkException(err)
+
+    return response.json()
 
 
 def verify_results(*, data):
