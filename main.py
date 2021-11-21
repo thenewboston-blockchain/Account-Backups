@@ -8,7 +8,7 @@ from utils.files import write_json
 from utils.format_results import format_results
 
 MAX_POINT_VALUE = 281474976710656
-PRIMARY_VALIDATOR_IP = '54.219.234.129'
+PRIMARY_VALIDATOR_IP = '13.56.13.57'
 
 
 class NetworkException(Exception):
