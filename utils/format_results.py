@@ -6,9 +6,9 @@ def format_results(data):
     results = dict()
 
     for entry in data:
-        account_number = entry['account_number']
+        account_number = entry['account_number'].lower()
         balance = entry['balance']
-        balance_lock = entry['balance_lock']
+        balance_lock = entry['balance_lock'].lower()
 
         if balance == 0:
             continue
